@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Basic Calculator
+</title>
+<script src="java.js"></script>
+<link rel="stylesheet" href="c.css">
+</head>
+<center>
+<body>
+<h1>Basic Calculator</h1>
+<table>
+<tr>
+<td colspan=3><textarea id="input" rows="5" cols="50" disabled></textarea>
+<td><input type="reset" name="Clear" value="Clear" onclick=clr()></td>
+</td></tr>
+<tr>
+<td><input type="button" name=9 value=9 onclick=solve('9')></td>
+<td><input type="button" name=8 value=8 onclick=solve('8')></td>
+<td><input type="button" name=7 value=7 onclick=solve('7')></td>
+<td><input type="button" name=÷ value=÷ onclick=solve('/')></td>
+</tr>
+<tr>
+<td><input type="button" name=6 value=6 onclick=solve('6')></td>
+<td><input type="button" name=5 value=5 onclick=solve('5')></td>
+<td><input type="button" name=4 value=4 onclick=solve('4')></td>
+<td><input type="button" name=* value=* onclick=solve('*')></td>
+</tr>
+<tr>
+<td><input type="button" name=3 value=3 onclick=solve('3')></td>
+<td><input type="button" name=2 value=2 onclick=solve('2')></td>
+<td><input type="button" name=1 value=1 onclick=solve('1')></td>
+<td><input type="button" name=- value=- onclick=solve('-')></td>
+</tr>
+<tr>
+<td><input type="button" name=0 value=0 onclick=solve('0')></td>
+<td><input type="button" name=. value=. onclick=solve('.')></td>
+<td><input type="button" name=+ value=+ onclick=solve('+')></td>
+<td><input type="button" name="=" value="=" onclick=eq()></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
